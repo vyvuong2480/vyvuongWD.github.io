@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.topnav {
+  	overflow: hidden;
+  	background-color: white;
+  	position: relative;
+}
+
+.topnav #myLinks {
+  	display: none;
+	text-align: center;
+}
+.topnav a:hover{
+	background: #F0B725;
+	color: white;
+}
+
+.topnav a {
+  	color: black;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+  	display: block;
+}
+.topnav a.icon {
+  	background: #F0B725;
+  	display: block;
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+	width: 59px;
+	height: 59px;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 10px;
+}
+.active {
+  	background-color: black;
+  	color: white;
+	
+}
+.img{
+	width: 1300px;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.intro{
+	width: 100%;
+	text-align: center;
+}
+.button{
+	padding: 20px 60px 20px 60px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	margin-top: 20px;
+	border-radius: 50px;
+	border: none;
+	background: #F0B725;
+	font-size: 20px;
+}
+.button:hover{
+	background: black;
+	color: #F0B725;
+}
+.blackbg1{
+	background: black;
+	width: 100%;
+	height: 1080px;
+}
+.blackbg2{
+	background: black;
+	width: 100%;
+}
+#footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 60px;
+}
+#movetop{
+  	display: block;
+  	position: fixed;
+  	bottom: 20px;
+  	right: 20px;
+  	z-index: 99;
+  	border: none;
+	height: 45px;
+	width: 45px;
+  	background-color: #F0B725;
+  	color: black;
+  	padding: 15px;
+  	border-radius: 10px;
+}
+
+#movetop:hover{
+  	background-color: black;
+	color: #F0B725;
+}
+
+@media only screen 
+   and (max-width : 376px) {
+	   .active{
+		   width: 100%;
+		   height: 40px;
+	   }
+	   .active img{
+		   width: 130px;
+		   padding: 0;
+	   }
+	   .topnav a.icon{
+		   padding: 0;
+		   background: black;
+		   color: white;
+		   height: 68px;
+		   width: 68px;
+		   font-size: 25px;
+	   }
+	   .doodle{
+		   padding: 0px;
+		   width: 100%;
+	   }
+	   .img{
+		   padding: 0px;
+		   margin: 0px;
+		   width: 100%;
+	   }
+	   .button{
+		   padding: 15px 30px 15px 30px;
+		   font-size: 17px;
+		   margin-bottom: 35px;
+	   }
+	   .blackbg1{
+		   width: 100%;
+		   height: 360px;
+	   }
+	   #footer{
+		   padding: 30px;
+	   }
+		}

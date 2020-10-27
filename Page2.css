@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.topnav {
+  	overflow: hidden;
+  	background-color: white;
+  	position: relative;
+}
+
+.topnav #myLinks {
+  	display: none;
+	text-align: center;
+}
+.topnav a:hover{
+	background: #F0B725;
+	color: white;
+}
+
+.topnav a {
+  	color: black;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+  	display: block;
+}
+.topnav a.icon {
+  	background: #F0B725;
+  	display: block;
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+	width: 59px;
+	height: 59px;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 10px;
+}
+.active {
+  	background-color: black;
+  	color: white;
+}
+h1{
+	font-size: 40px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+.row{
+	text-align: center;
+}
+.image{
+	border: none;
+}
+.image:hover{
+	transition: all ease 0.3s;
+	box-shadow: 0px 15px 15px rgba(90,91,95,0.3);
+}
+#footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 60px;
+}
+#movetop{
+  	display: block;
+  	position: fixed;
+  	bottom: 20px;
+  	right: 20px;
+  	z-index: 99;
+  	border: none;
+	height: 45px;
+	width: 45px;
+  	background-color: #F0B725;
+  	color: black;
+  	padding: 15px;
+  	border-radius: 10px;
+}
+#movetop:hover{
+  	background-color: black;
+	color: #F0B725;
+}
+@media only screen 
+   and (max-width : 376px) {
+	   .active{
+		   width: 100%;
+		   height: 40px;
+	   }
+	   .active img{
+		   width: 130px;
+		   padding: 0;
+	   }
+	   .topnav a.icon{
+		   padding: 0;
+		   background: black;
+		   color: white;
+		   height: 68px;
+		   width: 68px;
+		   font-size: 25px;
+	   }
+	   h1{
+		   font-size: 30px;
+		   margin-bottom: 15px;
+	   }
+	   .image{
+		   width: 100%;
+	   }
+	   #footer{
+		   padding: 30px;
+	   }
+		}

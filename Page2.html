@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=n">
+<title>Untitled Document</title>
+<link href="Page2.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="topnav">
+  		<a href="index.html" class="active"><img src="logo.png" alt="" width="150"></a>
+  			<div id="myLinks">
+    			<a href="Page1.html">Commissions</a>
+    			<a href="Page2.html">School Assignments</a>
+    			<a href="Page3.html">Bruh</a>
+  			</div>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+  		</a>
+	</div>
+	<section class="hk1">
+		<h1>First Semester</h1>
+		<div data-aos="fade-down" class="row">
+			<img class="image" src="assignments/A-B.png" alt="" width="550">
+			<img class="image" src="assignments/C-D.png" alt="" width="550">
+		</div>
+			<div data-aos="fade-down" class="row">
+			<img class="image" src="assignments/E-F.png" alt="" width="550">
+			<img class="image" src="assignments/G-H.png" alt="" width="550">
+		</div>
+		<div data-aos="fade-down" class="row">
+			<img class="image" src="assignments/I - F.png" alt="" width="550">
+			<img class="image" src="assignments/K - L.png" alt="" width="550">
+			</div>
+			<div data-aos="fade-down" class="row">
+			<img class="image" src="assignments/M - N.png" alt="" width="550">
+			<img class="image" src="assignments/O - P.png" alt="" width="550">
+		</div>
+	</section>
+	<section class="final">
+		<h1>Final Assignment</h1>
+		<div data-aos="fade-down" class="row">
+			<img class="image" src="assignments/1.png" alt="" width="550">
+			<img class="image" src="assignments/2.png" alt="" width="550">
+		</div>
+		<div data-aos="fade-down" class="row">
+			<img class="image" src="assignments/Vua Hùng.png" alt="" width="550">
+			<img class="image" src="assignments/Người đưa tin.png" alt="" width="550">
+		</div>
+		<div data-aos="fade-down" class="row">
+			<img class="image" src="assignments/Tướng giặc.png" alt="" width="550">
+			<img class="image" src="assignments/Lính giặc.png" alt="" width="550">
+		</div>
+	</section>
+	<footer id="footer">
+		<p>Copyright &#169; 2020 Vy Vuong</p>
+	</footer>
+	<button onClick="topFunction()" id="movetop" title="Gototop">
+		<span class="fa fa-arrow-up" aria-hidden="true"></span>
+		</button>
+<script>
+				window.onscroll = function () {
+					scrollFunction()
+				};
+				function scrollFunction() {
+					if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+						document.getElementById("movetop").style.display = "block";
+					} else {
+						document.getElementById("movetop").style.display = "none";
+					}
+				}
+								function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+			</script>
+	<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
+</body>
+</html>
